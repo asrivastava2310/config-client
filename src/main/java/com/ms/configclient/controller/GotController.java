@@ -28,10 +28,10 @@ public class GotController {
         this.losers = Arrays.asList(losers.split(","));
     }
 
-    /*@Value("${spring.profiles.active}")
+    @Value("${spring.profiles.active}")
     void setActiveProfile(String profile) {
         this.profile = profile;
-    }*/
+    }
 
     @Autowired
     void setProjectProperties(GameOfThronesProperties properties) {
